@@ -12,5 +12,5 @@ snk_io_printf "PRINTF: This is a test!\n";
 
 snk_module_create "user" "$(cat test/cat/userscript_init.bash)";
 snk_load "user";
-echo "$HELLO$SPACE$WORLD$EXCLAMATOIN_MARK"
-echo '$HELLO$SPACE$WORLD$EXCLAMATOIN_MARK'
+echo "$HELLO$SPACE$WORLD$EXCLAMATION_MARK"
+echo '$HELLO$SPACE$WORLD$EXCLAMATION_MARK'
