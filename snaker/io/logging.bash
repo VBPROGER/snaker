@@ -4,13 +4,8 @@ snk_log(){
   # Prints something to console.
   # Argument 1 is message.
   # Argument 2 is log level.
-  local MESSAGE
-  local LOGLEVEL
-  MESSAGE=$1
-  if [ -z "${2}" ]; then
-    LOGLEVEL="DEBUG"
-  else
-    LOGLEVEL=$2
-  fi
+  local MESSAGE=$1
+  local LOGLEVEL=$2
+  [ -z "${LOGLEVEL}" ] && LOGLEVEL="DEBUG"
   echo "[SNK-$LOGLEVEL] $MESSAGE"
 }
