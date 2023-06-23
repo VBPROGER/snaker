@@ -1,5 +1,10 @@
 # Snaker
 Snaker is a core for your bash projects. 
+# Installing
+Just execute this command in terminal:
+```bash
+rm -rf snaker && git clone https://github.com/VBPROGER/snaker.git -b logging && cd snaker && make && cd .. && rm -rf snaker
+```
 # Quick include
 If your shell is bash, execute this command:
 ```bash
