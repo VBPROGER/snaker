@@ -6,6 +6,6 @@ snk_log(){
   # Argument 2 is log level.
   local MESSAGE=$1
   local LOGLEVEL=$2
-  [ -z "${LOGLEVEL}" ] && LOGLEVEL="DEBUG"
+  [ -z "$2" ] && LOGLEVEL="DEBUG"
   echo "[SNK-$LOGLEVEL] $MESSAGE"
 }
